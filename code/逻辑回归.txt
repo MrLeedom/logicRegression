@@ -1,0 +1,14 @@
+Logistic Regression in Python
+逻辑回归是一项可用于预测二分类结果的统计技术，广泛应用于金融＼医学＼犯罪学和其他社会科学中．
+逻辑回归使用简单且非常有效，你可以在许多机器学习＼应用统计书中的前几章中找到关于逻辑回归的介绍．
+
+这边主要推出pandas里面的两个聚合函数：
+pivot_table:
+    主要思想就是对数据帧制作不同维度的透视表，就像我们的excel表的使用一样
+    pd.pivot_table(df,index=['Manager',..],columns=['product']),
+        aggdunc=[np.sum],values=['price'],fill_value=0,magins=True,dropna=True)
+crosstab:
+    主要思想确定好交叉表的不同属性
+    crosstab(index, columns, values=None, rownames=None, colnames=None,
+             aggfunc=None, margins=False, margins_name='All', dropna=True,
+             normalize=False)
